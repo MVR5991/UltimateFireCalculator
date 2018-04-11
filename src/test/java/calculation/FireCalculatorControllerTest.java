@@ -39,7 +39,7 @@ public class FireCalculatorControllerTest {
     public void shouldReturnInvalidArgumentExceptionWhenSWRequalsZero() throws Exception {
         this.mockMvc.perform(get("/calcfin?ySPending=48000&swr=0")).andDo(print()).andExpect(status().is5xxServerError());
     }
-    
+
 }
 
 
